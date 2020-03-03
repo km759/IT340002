@@ -1,0 +1,63 @@
+    1  sudo useradd nagios
+    2  sudo apt update
+    3  sudo apt upgrade
+    4  sudo apt install autoconf gcc libmcrypt-dev make libssl-dev wget dc build-essential gettext
+    5  curl -L -O https://nagios-plugins.org/download/nagios-plugins-2.3.2.tar.gz
+    6  tar zxf nagios-plugins-2.3.2.tar.gz
+    7  cd nagios-plugins-2.3.2
+    8  ./configure
+    9  make
+   10  sudo make install
+   11  cd ~
+   12  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0/nrpe-4.0.0.tar.gz
+   13  tar zxf nrpe-4.0.0.tar.gz
+   14  cd nrpe-4.0.0
+   15  ./configure
+   16  make nrpe
+   17  sudo make install-daemon
+   18  sudo make install-config
+   19  sudo make install-init
+   20  df -h /
+   21  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   22  hostname -I
+   23  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   24  sudo systemctl start nrpe.service
+   25  sudo systemctl status nrpe.service
+   26  sudo ufw allow 5666/tcp
+   27  sudo systemctl status nrpe.service
+   28  sudo systemctl start nrpe.service
+   29  sudo systemctl status nrpe.service
+   30  logout
+   31  sudo systemctl start nrpe.service
+   32  sudo systemctl status nrpe.service
+   33  logout
+   34  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   35  hostname -I
+   36  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   37  sudo systemctl status nrpe.service
+   38  sudo systemctl start nrpe.service
+   39  sudo systemctl status nrpe.service
+   40  sudo systemctl stop nrpe.service
+   41  sudo systemctl status nrpe.service
+   42  sudo systemctl start nrpe.service
+   43  sudo systemctl status nrpe.service
+   44  logout
+   45  sudo systemctl status nrpe.service
+   46  sudo ufw allow 80/tcp
+   47  sudo systemctl stop nrpe.service
+   48  sudo systemctl start nrpe.service
+   49  sudo systemctl status nrpe.service
+   50  sudo systemctl stop nrpe.service
+   51  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   52  sudo systemctl status nrpe.service
+   53  sudo systemctl start nrpe.service
+   54  sudo systemctl status nrpe.service
+   55  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   56  sudo systemctl status nrpe.service
+   57  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   58  sudo systemctl start nrpe.service
+   59  sudo systemctl status nrpe.service
+   60  logout
+   61  git clone https://github.com/km759/IT340002.git
+   62  history
+   63  history > VM2history.txt
