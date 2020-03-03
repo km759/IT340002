@@ -1,0 +1,128 @@
+    1  sudo apt update
+    2  sudo apt install autoconf gcc make unzip libgd-dev libmcrypt-dev libssl-dev dc snmp libnet-snmp-perl gettext
+    3  cd~
+    4  cd ~
+    5  curl -L -O https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.5.tar.gz
+    6  tar zxf nagios-4.4.5.tar.gz
+    7  cd nagioscore-nagios-4.4.5
+    8  ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+    9  make all
+   10  sudo make install-groups-users
+   11  sudo make intstall
+   12  sudo make install
+   13  sudo make install-daemoninit
+   14  sudo make install-commandmode
+   15  sudo make install-config
+   16  sudo make install-webconf
+   17  sudo a2enmod rewrite
+   18  cat /etc/apache2/apache2.conf
+   19  ls
+   20  ls -al /etc/apache2
+   21  cd ..
+   22  ls
+   23  sudo apt install apache2
+   24  cd nagioscore-nagios-4.4.5
+   25  sudo make install-webconf
+   26  sudo a2enmod rewrite
+   27  sudo a2enmod cgi
+   28  sudo usermod -a -G nagios www-data
+   29  sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+   30  sudo systemct1 restart apache2
+   31  sudo systemctl restart apache2
+   32  cd ~
+   33  curl -L -O https://nagios-plugins.org/download/nagios-plugins-2.3.2.tar.gz
+   34  tar zxf nagios-plugins-<^>2.3.2<^.tar.gz
+   35  ls
+   36  tar zxf nagios-plugins-<^>2.2.1<^.tar.gz
+   37  tar zxf nagios-plugins-<^>2.2.1<^>.tar.gz
+   38  tar zxf nagios-plugins-<^>2.2.1<.tar.gz
+   39  sudo apt-get install -y autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev
+   40  tar zxf nagios-plugins-<^>2.2.1<^.tar.gz
+   41  tar zxf nagios-plugins-<^>2.3.2<^.tar.gz
+   42  tar zxf nagios-plugins-2.3.2.tar.gz
+   43  cd nagios-plugins-2.3.2
+   44  ./configure
+   45  make
+   46  sudo make install
+   47  cd ~
+   48  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0/nrpe4.0.0.tar.gz
+   49  tar zxf nrpe-4.0.0.tar.gz
+   50  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-3.2.1/nrpe3.2.1.tar.gz
+   51  tar zxf nrpe-3.2.1.tar.gz
+   52  tar -jxvf nrpe-4.0.0.tar.gz
+   53  ls
+   54  sudo rm nrpe3.2.1.tar.gz
+   55  ls
+   56  tar zxf nrpe4.0.0.tar.gz
+   57  sudo rm nrpe4.0.0.tar.gz
+   58  ls
+   59  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0/nrpe-4.0.0.tar.gz
+   60  tar zxf nrpe-4.0.0.tar.gz
+   61  ls
+   62  cd nrpe-4.0.0
+   63  ./ configure
+   64  ./configure
+   65  make check_nrpe
+   66  sudo make install-plugin
+   67  sudo nano /usr/local/nagios/etc/nagios.cfg
+   68  sudo mkdir /usr/local/nagios/etc/servers
+   69  sudo nano /usr/local/nagios/etc/objects/contacts.cfg
+   70  sudo nano /usr/local/nagios/etc/objects/commands.cfg
+   71  sudo systemctl start nagios
+   72  dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+   73  start nagios
+   74  sudo start nagios
+   75  sudo systemctl start nagios
+   76  systemctl status apache2.service
+   77  sudo systemctl start nagios
+   78  ls
+   79  ifconfig
+   80  ipconfig
+   81  ip addr show
+   82  hostname -I
+   83  sudo service apache2 restart
+   84  sudo systemctl start nagios
+   85  hostname -I
+   86  a2enmod cgi
+   87  sudo a2enmod cgi
+   88  sudo systemctl restart apache2
+   89  sudo systemctl start nagios
+   90  curl http://10.0.2.15/
+   91  hostname -I
+   92  cd ~
+   93  hostname -I
+   94  cd nrpe-4.0.0
+   95  ls
+   96  sudo nano /usr/local/nagios/etc/objects/nrpe.cfg
+   97  ls
+   98  logout
+   99  hostname -I
+  100  sudo systemctl restart apache2
+  101  sudo systemctl start nagios
+  102  sudo nano /usr/local/nagios/etc/objects/commands.cfg
+  103  hostname -I
+  104  sudo nano /usr/local/nagios/etc/objects/commands.cfg
+  105  make check_nrpe
+  106  sudo make install-plugin
+  107  ./configure
+  108  cd nrpe-4.0.0
+  109  hostname -I
+  110  sudo vim /etc/httpd/conf/httpd.conf
+  111  sudo nano /etc/httpd/conf/httpd.conf
+  112  sudo vi /etc/httpd/conf/httpd.conf
+  113  ls
+  114  git clone https://github.com/km759/IT340002.git
+  115  ls
+  116  history
+  117  history > VM1history.txt
+  118  ls
+  119  mv VM1history.txt ~
+  120  mv VM1history.txt ~IT340002
+  121  cd IT340002
+  122  ls
+  123  cd ~
+  124  mv VM1history.txt ~/IT340002
+  125  ls
+  126  rm ~IT340002
+  127  ls
+  128  history > VM1history.txt
