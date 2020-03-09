@@ -1,0 +1,359 @@
+    1  cd var/log
+    2  cd /var/log
+    3  ls
+    4  cat /var/log
+    5  cat faillog
+    6  cat dpkg.log
+    7  cd /var/log
+    8  ls
+    9  cat boot.log
+   10  sudo cat boot.log
+   11  sudho cat auth.log
+   12  sudo cat auth.log
+   13  ls
+   14  sudo cat syslog
+   15  ls
+   16  sudo cat syslog tail -f
+   17  sudo cat syslog tail
+   18  cat home/vagrant/instructions.txt
+   19  cat /home/vagrant/instructions.txt
+   20  ls
+   21  ls -a
+   22  cd journal
+   23  ls
+   24  cd ..
+   25  sudo cat syslog | grep 'error'
+   26  sudo cat tallylog | grep 'error'
+   27  sudo cat bootstrap.log | grep 'error'
+   28  sudo cat auth.log | grep 'error'
+   29  sudo cat auth.log 
+   30  cd /run/log/journal
+   31  sudo cat syslog | grep 'Error'
+   32  sudo cat syslog | grep 'Fatal'
+   33  sudo cat syslog | grep 'FATAL'
+   34  sudo cat auth.log | grep 'Fatal'
+   35  sudo cat bootstrap.log | grep 'Fatal'
+   36  sudo cat syslog less
+   37  ls
+   38  sudo cat lastlog
+   39  sudo cat kern.log
+   40  ls
+   41  sudo cat alternatives.log
+   42  sudo cat btmp
+   43  sudo less cat dpkg.log 
+   44  sudo less dpkg.log 
+   45  grep "Out of memory" /var/log/syslog
+   46  grep "Out of memory" /var/log/kern.log
+   47  sudo cat syslog 
+   48  sudo cat syslog | grep 'Out of memory'
+   49  sudo cat kern.log | grep 'Out of memory'
+   50  top
+   51  ls
+   52  cd ~
+   53  ls
+   54  cd ..
+   55  ls
+   56  cd /var/log
+   57  cd ~
+   58  cd Vagrant
+   59  cd /var/log
+   60  sudo cat syslog | grep 'error'
+   61  sudo cat syslog | grep 'memory'
+   62  sudo cat kern.log | grep 'memory'
+   63  ls
+   64  sudo cat dpkg.log | grep 'memory'
+   65  sudo cat auth.log | grep 'memory'
+   66  sudo cat bootstrap.log | grep 'memory'
+   67  sudo cat alternatives.log | grep 'memory'
+   68  sudo cat tallylog | grep 'memory'
+   69  sudo cat faillog | grep 'memory'
+   70  cat home/vagrant/instructions.txt
+   71  sudo less syslog
+   72  sudo apt install apache
+   73  cd ~
+   74  top
+   75  ps axo stat,ppid,pid,comm | grep -w defunct
+   76  kill -s SIGCHLD PID
+   77  sudo kill -9 20221
+   78  top
+   79  sar -r
+   80  sudo sar -r
+   81  top
+   82  free -m
+   83  netstat -plntu
+   84  sudo netstat -plntu
+   85  psaux
+   86  ping -c 4 8.8.8.8
+   87  ip addr
+   88  ps aux
+   89  kill 20234
+   90  sudo kill 20234
+   91  ps aux
+   92  sudo kill 20232
+   93  ps aux
+   94  systemctl status
+   95  systemctl statush
+   96  systemctl status ssh
+   97  cd var
+   98  ls
+   99  cd /var/
+  100  ls
+  101  sudo cat log
+  102  cd crash
+  103  ls
+  104  cd ..
+  105  cd cache
+  106  ls
+  107  cd ..
+  108  cd home
+  109  cd~
+  110  cd ~
+  111  ls
+  112  cd home
+  113  cat instructions.txt
+  114  sudo apt-get apache
+  115  sudo apt-get install apache
+  116  sudo apt-get install apache2
+  117  ls
+  118  sudo status-all
+  119  sudo service --status-all
+  120  systemctl list-units
+  121  ps aux
+  122  kill 20233
+  123  sudo kill 20233
+  124  sudo kill 20236
+  125  ps aux
+  126  clear
+  127  git clone https://github.com/km759/IT340002.git
+  128  ls
+  129  cat instructions.txt
+  130  script mywork.txt -f
+  131  ls
+  132  cd IT340002
+  133  mkdir Midterm
+  134  ls
+  135  cd ~
+  136  ls
+  137  mv mywork.txt /IT340002/Midterm
+  138  mv mywork.txt /IT340002/Midterm/
+  139  cd IT340002
+  140  ls
+  141  cd ~
+  142  mv mywork.txt IT340002
+  143  cd IT340002
+  144  ls
+  145  mv mywork.txt Midterm
+  146  cd Midterm
+  147  ls
+  148  cd ~
+  149  cd IT340002
+  150  git add .
+  151  git commit -m
+  152  git commit -m 'Midterm"
+  153  git commit -m 'Midterm'
+  154  git config --global --edit
+  155  git push origin master
+  156  ls
+  157  cat instructions.txt
+  158  sudo apt install rsyslog
+  159  ls
+  160  cd /var/logs
+  161  cd /var/log
+  162  ls
+  163  cd apache2
+  164  ls
+  165  cd ~
+  166  cd log
+  167  ls
+  168  ls -a
+  169  cd apache2
+  170  cd /var/log
+  171  cd apache2
+  172  ls -a
+  173  cd ~
+  174  ls -a
+  175  cd ~/log
+  176  cd log
+  177  cd apache2
+  178  cd /var/log
+  179  cd apache2
+  180  ls
+  181  cd ~
+  182  cd etc
+  183  ls -a
+  184  cd .loacal
+  185  cd .local
+  186  ls
+  187  ls -a
+  188  cd ..
+  189  cd var/log/apache2
+  190  cd /var/log/apache2
+  191  ls
+  192  cd ~
+  193  cd ..
+  194  ls
+  195  ls -a
+  196  cd ..
+  197  ls
+  198  cd etc
+  199  ls
+  200  cd apache2
+  201  ls
+  202  cat apache2.conf
+  203  cd ..
+  204  ls
+  205  nano rsyslog.d
+  206  nano rsyslog.conf
+  207  cd ~
+  208  cat instructions.txt
+  209  cd ..
+  210  ls
+  211  cd etc
+  212  ls
+  213  cd ~
+  214  sudo nano /etc/crontab
+  215  echo 'hi'
+  216  sudo nano /etc/crontab
+  217  nano cronupdate.sh
+  218  chmod +x cronupdate.sh
+  219  ./ cronupdate.sh
+  220  ./cronupdate.sh
+  221  sudo nano /etc/crontab
+  222  ls
+  223  sudo nano /etc/crontab
+  224  crontab -e
+  225  pwd
+  226  crontab -e
+  227  ls
+  228  crontab -e
+  229  sudo nano /etc/crontab
+  230  ./cronupdate.sh
+  231  crontab -e
+  232  nano cronupdate.sh
+  233  ./cronupdate.sh
+  234  crontab -e
+  235  nano cronupdate.sh
+  236  crontab -e
+  237  nano cronupdate.sh
+  238  tty
+  239  crontab -e
+  240  nano cronupdate.sh
+  241  crontab -e
+  242  nano cronupdate.sh
+  243  crontab -e
+  244  ls
+  245  mv cronupdate.sh IT340002
+  246  cd IT340002
+  247  ls
+  248  mv cronupdate.sh Midterm
+  249  cd Midterm
+  250  ls
+  251  cd ..
+  252  git add .
+  253  git commit -m "Midterm"
+  254  git push origin master
+  255  git config --global --edit
+  256  cd ~
+  257  ls
+  258  cd ..
+  259  cd home
+  260  ls
+  261  ls -a
+  262  cd ..
+  263  ls -a
+  264  cd dev
+  265  ls
+  266  cd ..
+  267  cd etc
+  268  ls -a
+  269  cd apache2
+  270  ls -a
+  271  ls ~
+  272  ls ~/log
+  273  cat instructions.txt
+  274  cd ~
+  275  cat instructions.txt
+  276  cd ..
+  277  cd etc
+  278  cd apache2
+  279  ls 
+  280  ls -a
+  281  ls | magic
+  282  ls | grep magic
+  283  ls | grep index
+  284  cd ~
+  285  find index
+  286  cd..
+  287  cd ..
+  288  find index
+  289  ls -a
+  290  cd etc
+  291  ls -a
+  292  cd ..
+  293  cd usr
+  294  ls -a
+  295  cd local
+  296  ls -
+  297  ls -a
+  298  cd etc
+  299  ls -
+  300  ls -a
+  301  cd ..
+  302  cd var
+  303  ls -a
+  304  cd www
+  305  ls -a
+  306  cd html
+  307  ls -a
+  308  nano index.html
+  309  sudo nano index.html
+  310  ls
+  311  php -f /var/www/html/index.php
+  312  C:\Program Files (x86)\Google\Chrome\Application index.php
+  313  C:\Program Files(x86)\Google\Chrome\Application index.php
+  314  C:\Program Files\Mozilla Firefox\firefox.exe index.php
+  315  C:\ProgramFiles\MozillaFirefox\firefox.exe index.php
+  316  start iexplore.exe
+  317  START "" /var/www/html/index.php
+  318  explorer index.php
+  319  Start-Process index.php
+  320  Start-Process "index.php"
+  321  chrome.exe
+  322  cd ~
+  323  C:\Program Files\Mozilla Firefox\firefox.exe index.php
+  324  C:\Program Files (x86)\Google\Chrome\Application index.php
+  325  chrome.exe
+  326  cd..
+  327  cd ..
+  328  ls -a
+  329  cd etc
+  330  ls -a
+  331  cd apache2
+  332  ls
+  333  ls -a
+  334  cd ..
+  335  ls
+  336  cd dev
+  337  ls
+  338  cd ..
+  339  ls -a
+  340  home
+  341  cd home
+  342  ls -a
+  343  cd ..
+  344  cd apache2
+  345  cd et
+  346  cd etc
+  347  cd apache2
+  348  ls -a
+  349  cd ..
+  350  cd /var/lo
+  351  cd /var/log
+  352  ls -a
+  353  cd apache2
+  354  ls
+  355  cd ~
+  356  Start-Process -Path "http://www.microsoft.com/"
+  357  sudo nano /etc/rsyslog.conf
+  358  cd ~
+  359  history > history.txt
