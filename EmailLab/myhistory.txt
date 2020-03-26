@@ -1,0 +1,22 @@
+    1  sudo apt get install postfix
+    2  sudo apt-get install postfix
+    3  sudo apt-get install postfix mailutils -y
+    4  sudo nano /etc/postfix/sasl_passwd
+    5  sudo chmod 600 /etc/postfix/sasl_passwd
+    6  sudo nano /etc/postfix/main.cf
+    7  sudo postmap /etc/postfix/sasl_passwd
+    8  sudo nano /etc/aliases
+    9  sudo ufw allow 587
+   10  sudo systemctl restart postfix
+   11  echo "Postfix email" | mail -s "Email from 'hostname'" root
+   12  sudo nano /etc/aliases
+   13  sudo nano /etc/postfix/main.cf
+   14  sudo nano /etc/postfix/sasl_passwd
+   15  sudo nano /etc/postfix/main.cf
+   16  sudo nano /etc/aliases
+   17  sudo systemctl restart postfix
+   18  echo "Postfix email" | mail -s "Email from 'hostname'" root
+   19  sudo newaliases
+   20  echo "Postfix email" | mail -s "Email from 'hostname'" root
+   21  echo "Postfix email" | mail -s "Email from 'hostname'" km759@njit.edu
+   22  history > myhistory.txt
