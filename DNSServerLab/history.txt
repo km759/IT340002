@@ -1,0 +1,21 @@
+    1  sudo apt install -y bind9 bind9utils bind9-doc dnsutils
+    2  ifconfig
+    3  echo 192.168.1.195 > myip
+    4  cat myip
+    5  sudo nano /etc/bind/named.conf.local
+    6  sudo cp /etc/bind/db.local /etc/bind/forward.it340.local.db
+    7  sudo nano /etc/bind/forward.it340.local.db
+    8  sudo cp /etc/bind/db.127 /etc/bind/reverse.it340.local.db
+    9  sudo nano /etc/bind/reverse.it340.local.db
+   10  sudo named-checkconf
+   11  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   12  named-checkzone 192.168.1.195.in-addr.arpa /etc/bind/reverse.it340.local.db
+   13  sudo systemctl restart bind9
+   14  sudo systemctl enable bind9
+   15  sudo systemctl status bind9
+   16  sudo nano /etc/resolv.conf
+   17  dig www.it340.local
+   18  dig -x 192.168.1.195
+   19  git clone https://github.com/km759/IT340002.git
+   20  ls
+   21  history > history.txt
