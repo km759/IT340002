@@ -1,0 +1,8 @@
+[Service]
+ExecStart=/home/vagrant/test.sh
+Restart=always
+WorkingDirectory=/home/vagrant
+User=root
+
+[Install]
+WantedBy=multi-user.target
